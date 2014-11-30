@@ -37,16 +37,16 @@ vNotify.notify({text: 'text', title:'title'});
 
 ##Global Options
 ```javascript
-vNotify.options = {
+vNotify.options = _.assign({
   fadeInDuration: 2000,
   fadeOutDuration: 2000,
   fadeInterval: 50,
   visibleDuration: 5000,
   postHoverVisibleDuration: 500,
-  position: positionOption.topRight,
+  position: vNotify.positionOption.topRight,
   sticky: false,
   showClose: true 
-};
+});
 ```
 
 ##Notification Options
